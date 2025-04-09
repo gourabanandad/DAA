@@ -43,18 +43,18 @@ int max(int a, int b){
 // Tabulation
 
 int knapsack(int weights[], int values[], int w, int n){
-	int t[w+1][n+1];
+	int t[w+1][n+1];			// Initialize the dp table
 	int i, j;
 	for(i=0;i<=w;i++){
 		for(j=0;j<=n;j++){
 			if(i==0||j==0){
-				t[i][j] = 0;
+				t[i][j] = 0;	// Base case where i and j are 0 are filled with zero
 			}
 			else if(weights[j]>i){
-				t[i][j] = t[i][j-1];
+				t[i][j] = t[i][j-1]; // If any element has weight greater than the knapsack capacity so we ignore the element
 			}
 			else{
-				t[i][j] = max(values[j]+t[i-weights[j]][j-1], t[i][j-1]);
+				t[i][j] = max(values[j]+t[i-weights[j]][j-1], t[i][j-1]); // We have to option either chose an element or ignore the element
 			}
 		}
 	}
