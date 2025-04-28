@@ -56,6 +56,9 @@ Contains implementations of popular sorting algorithms:
 - Heap Sort
 - Radix Sort
 
+### 🔹 Array Algorithms
+- Prefix Sum
+- Sliding Window
 ---
 
 ## 💻 Language
