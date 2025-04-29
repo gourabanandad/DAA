@@ -35,6 +35,11 @@ Contains implementations of popular sorting algorithms:
 - **radix_sort.c**: Radix Sort.
 - **selection.c**: Selection Sort.
 
+### 3. **Array**
+Contains the popular algorithms aroun an array.
+- **prefix_sum.c**: Detailed overview of prefix sum technique.
+- **sliding_window.c**: Detailed overview of sliding window technique.
+
 ---
 
 ## 🧠 Topics Covered
