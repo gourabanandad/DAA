@@ -41,6 +41,10 @@ Contains implementations of popular array's algorithms:
 - **prefix_sum.c**: Prefix sum for subarray operation
 - **Sliding_window**: For subarray operation
 
+### 4. **Graph**
+Contains implementations of popular graph's algorithms:
+
+- **dfs.c**: Depth-First Search for finding low cost path
 ---
 
 ## 🧠 Topics Covered
@@ -65,6 +69,9 @@ Contains implementations of popular array's algorithms:
 ### 🔹 Array Algorithms
 - Prefix Sum
 - Sliding Window
+
+### 🔹 Graph's Algorithms
+- dfs
 ---
 
 ## 💻 Language
