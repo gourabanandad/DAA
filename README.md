@@ -36,10 +36,9 @@ Contains implementations of popular sorting algorithms:
 - **selection.c**: Selection Sort.
 
 ### 3. **Array**
-Contains implementations of popular array's algorithms:
-
-- **prefix_sum.c**: Prefix sum for subarray operation
-- **Sliding_window**: For subarray operation
+Contains the popular algorithms aroun an array.
+- **prefix_sum.c**: Detailed overview of prefix sum technique.
+- **sliding_window.c**: Detailed overview of sliding window technique.
 
 ### 4. **Graph**
 Contains implementations of popular graph's algorithms:
