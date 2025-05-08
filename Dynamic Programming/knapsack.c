@@ -1,73 +1,67 @@
-#include<stdio.h>
-// #include<string.h>
-int max(int a, int b){
-	if(a>b){
-		return a;
-	}
-	return b;
+/*
+    Problem Statement:
+    -------------------
+    Given weights and values of `n` items, put these items in a knapsack of capacity `w` 
+    to get the **maximum total value** in the knapsack.
+
+    Each item can be included **at most once** (0/1 Knapsack Problem).
+
+    Example:
+    --------
+    Input:
+        weights[] = {1, 3, 4, 6}
+        values[]  = {2, 3, 5, 7}
+        capacity w = 10
+
+    Output: 12
+    (We can include items with weights 4 and 6, values 5 and 7 → total value = 12)
+
+    Approach:
+    ---------
+    - Use Dynamic Programming (Tabulation) to build a table `t[w+1][n+1]`.
+    - `t[i][j]` represents the maximum value for weight `i` using first `j` items.
+    - If weight of current item > capacity, we ignore it.
+    - Otherwise, we take the maximum of:
+        a) Including the item → value + solve for remaining capacity
+        b) Excluding the item → carry over previous best result
+*/
+
+#include <stdio.h>
+
+// Utility function to return maximum of two integers
+int max(int a, int b) {
+    return (a > b) ? a : b;
 }
 
-//// Without Dynamic Programming
+// 0/1 Knapsack using Tabulation (Bottom-Up Dynamic Programming)
+int knapsack(int weights[], int values[], int w, int n) {
+    int t[w + 1][n + 1];  // DP table: t[i][j] stores max value with capacity i and j items
 
-//int knapsack(int weights[], int values[], int w, int n){
-//	if(n==0 || w==0){
-//		return 0;
-//	}
-//	else if(weights[n-1]>w){
-//		return knapsack(weights, values, w, n-1);
-//	}
-//	else{
-//		return max(values[n-1]+knapsack(weights, values, w-weights[n-1], n-1), knapsack(weights, values, w, n-1));
-//	}
-//}
+    for (int i = 0; i <= w; i++) {
+        for (int j = 0; j <= n; j++) {
+            if (i == 0 || j == 0) {
+                t[i][j] = 0;  // Base Case: 0 capacity or 0 items = 0 value
+            }
+            else if (weights[j - 1] > i) {
+                t[i][j] = t[i][j - 1];  // Cannot include item j-1
+            }
+            else {
+                // Include item j-1 or exclude it
+                t[i][j] = max(values[j - 1] + t[i - weights[j - 1]][j - 1],
+                             t[i][j - 1]);
+            }
+        }
+    }
 
-//// Memoization
-//
-//int t[100][100];
-//int knapsack(int weights[], int values[], int w, int n){
-//	if(n==0||w==0){
-//		return 0;
-//	}
-//	if(t[w][n]!=0){
-//		return t[w][n];
-//	}
-//	else if(weights[n-1]>w){
-//		t[w][n] =  knapsack(weights, values, w, n-1);
-//	}
-//	else{
-//		t[w][n] = max(values[n-1]+knapsack(weights, values, w-weights[n-1], n-1), knapsack(weights, values, w, n-1));
-//	}
-//	return t[w][n];
-//}
-
-// Tabulation
-
-int knapsack(int weights[], int values[], int w, int n){
-	int t[w+1][n+1];			// Initialize the dp table
-	int i, j;
-	for(i=0;i<=w;i++){
-		for(j=0;j<=n;j++){
-			if(i==0||j==0){
-				t[i][j] = 0;	// Base case where i and j are 0 are filled with zero
-			}
-			else if(weights[j]>i){
-				t[i][j] = t[i][j-1]; // If any element has weight greater than the knapsack capacity so we ignore the element
-			}
-			else{
-				t[i][j] = max(values[j]+t[i-weights[j]][j-1], t[i][j-1]); // We have to option either chose an element or ignore the element
-			}
-		}
-	}
-	return t[w][n];
+    return t[w][n];  // Max value with full capacity and all items
 }
 
-int main(){
-	int weights[] = {1, 3, 4, 6};
-	int values[]= {2, 3, 5, 7};
-	int w = 10;
-	// memset(t, 0, sizeof(t));
-	int n = sizeof(weights)/sizeof(int);
-	printf("%d", knapsack(weights, values, w, n));
-	return 0;
-}
+int main() {
+    int weights[] = {1, 3, 4, 6};
+    int values[]  = {2, 3, 5, 7};
+    int w = 10;  // Knapsack capacity
+    int n = sizeof(weights) / sizeof(int);  // Number of items
 
+    printf("Maximum value that can be put in knapsack: %d\n", knapsack(weights, values, w, n));
+    return 0;
+}

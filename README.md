@@ -40,6 +40,10 @@ Contains the popular algorithms aroun an array.
 - **prefix_sum.c**: Detailed overview of prefix sum technique.
 - **sliding_window.c**: Detailed overview of sliding window technique.
 
+### 4. **Graph**
+Contains implementations of popular graph's algorithms:
+
+- **dfs.c**: Depth-First Search for finding low cost path
 ---
 
 ## 🧠 Topics Covered
@@ -64,6 +68,9 @@ Contains the popular algorithms aroun an array.
 ### 🔹 Array Algorithms
 - Prefix Sum
 - Sliding Window
+
+### 🔹 Graph's Algorithms
+- dfs
 ---
 
 ## 💻 Language
