@@ -1,12 +1,12 @@
 # 📘 Design and Analysis of Algorithms (DAA)
 
-This repository contains C implementations of essential algorithms and problems related to **Dynamic Programming** and **Sorting Techniques**. It serves as a study reference and practical guide for students learning DAA.
+This repository contains C implementations of essential algorithms and problems related to Dynamic Programming, Sorting Techniques, and more. It serves as a study reference and practical guide for students learning DAA. 
 
 ---
 
 ## 📂 Folder Structure
 
-The project is organized into two main directories:
+The project is organized into the following directories:
 
 ### 1. **Dynamic Programming**
 Contains solutions for various dynamic programming problems:
@@ -36,14 +36,28 @@ Contains implementations of popular sorting algorithms:
 - **selection.c**: Selection Sort.
 
 ### 3. **Array**
-Contains the popular algorithms aroun an array.
+Contains popular algorithms around arrays:
+
 - **prefix_sum.c**: Detailed overview of prefix sum technique.
 - **sliding_window.c**: Detailed overview of sliding window technique.
+- **two_pointers_two_sum.c**: Two‑pointers approach for the Two‑Sum problem in a sorted array.
 
 ### 4. **Graph**
-Contains implementations of popular graph's algorithms:
+Contains implementations of popular graph algorithms:
 
-- **dfs.c**: Depth-First Search for finding low cost path
+- **dfs.c**: Depth‑First Search for finding the low‑cost path.
+
+### 5. **Greedy Algorithms**
+Contains greedy‑strategy solutions:
+
+- **activity_selection.c**: Maximum number of non‑overlapping activities.
+- **fractional_knapsack.c**: Maximizing profit with fractional items in a knapsack.
+
+### 6. **Linked List**
+Contains linked‑list operations:
+
+- **linked_list_reversal.c**: Reversing a linked list (iterative and recursive).
+
 ---
 
 ## 🧠 Topics Covered
@@ -68,14 +82,23 @@ Contains implementations of popular graph's algorithms:
 ### 🔹 Array Algorithms
 - Prefix Sum
 - Sliding Window
+- Two‑Pointers Two‑Sum
 
-### 🔹 Graph's Algorithms
-- dfs
+### 🔹 Greedy Algorithms
+- Activity Selection
+- Fractional Knapsack
+
+### 🔹 Linked List Algorithms
+- Linked List Reversal
+
+### 🔹 Graph Algorithms
+- Depth‑First Search (DFS)
+
 ---
 
 ## 💻 Language
 
-All code is written in **C** with a focus on clarity and efficiency.
+All code is written in **C**, focusing on clarity and efficiency. 
 
 ---
 
