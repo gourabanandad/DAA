@@ -26,8 +26,8 @@ Sorting is a fundamental operation in computer science, used to arrange data in 
 Make sure you have a C compiler installed. Then:
 
 ```bash
-gcc knapsack.c -o knapsack
-./knapsack
+gcc bubble_sort.c -o bubble_sort
+./bubble_sort
 ```
 
 Repeat similarly for other files.
@@ -38,9 +38,8 @@ Repeat similarly for other files.
 
 Want to contribute?
 
-* Add new DP problems
 * Optimize existing solutions
-* Provide multiple approaches (e.g., memoization vs tabulation)
+* Improve documentation and comments
 
 ---
 

@@ -37,8 +37,8 @@ You can easily compile and run any of the programs in this folder. Follow these 
 
    For the **Activity Selection Problem**:
    ```bash
-   gcc activity_selection.c -o activity
-   ./activity
+   gcc activity_selection.c -o activity_selection
+   ./activity_selection
 
    Repeat similarly for other files.
 Each program is designed to run in the terminal, where it will display the results of the greedy algorithm applied to the problem.

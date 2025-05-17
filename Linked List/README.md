@@ -43,6 +43,16 @@ Stay tuned for more useful and interview-relevant linked list algorithms!
 
 ---
 
+## 🧪 How to Run
+
+Make sure you have a C compiler installed. Then:
+
+```bash
+gcc linked_list_reversal.c -o linked_list_reversal
+./linked_list_reversal
+```
+
+---
 ## ✅ Contributing
 
 Want to contribute?

@@ -36,25 +36,34 @@ This section will continue to grow! Future updates will include more array-based
 
 ---
 
-## 🛠️ How to Run the Programs
+## 🛠️ How to Use
 
-Each file is written in C and can be compiled and run from the terminal:
+You can easily compile and run any of the programs in this folder. Follow these simple steps:
 
-```bash
-gcc filename.c -o program
-./program
+1. Open your terminal or command prompt.
+2. Navigate to the directory containing the `.c` files.
+3. Use the following commands to compile and run each program:
 
-Replace filename.c with the actual program file.
+   For the **prefix_sum problem**:
+   ```bash
+   gcc prefix_sum.c -o prefix_sum
+   ./prefix_sum
+
+   Repeat similarly for other files.
+
+---
 
 ## ✅ Contributing
 
 Want to contribute?
 
-* Add new Array problems.
+* Add new array problems.
 * Optimize existing solutions.
 * Write better documentation or add more comments to help others understand the algorithms better.
 
 Feel free to fork the repository, make your changes, and submit a pull request!
+
+
 ---
 
 ## 📜 License
@@ -64,3 +73,4 @@ This project is open-source under the [MIT License](../LICENSE).
 ---
 
 ⭐ Star this repository if you find it helpful or inspiring!
+
