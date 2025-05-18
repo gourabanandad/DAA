@@ -107,7 +107,11 @@ All code is written in **C**, focusing on clarity and efficiency.
 Feel free to fork, clone, and suggest improvements. Pull requests are welcome for more algorithm additions or improvements in code clarity.
 
 ---
+---
+## 👥 Contributors
+See the full list of contributors in [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
+---
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
