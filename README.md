@@ -3,7 +3,9 @@
 This repository contains C implementations of essential algorithms and problems related to Dynamic Programming, Sorting Techniques, and more. It serves as a study reference and practical guide for students learning DAA. 
 
 ---
-
+<p align="center">
+  <img src="demo.gif" alt="DAA Demo" />
+</p>
 ## 📂 Folder Structure
 
 The project is organized into the following directories:
