@@ -106,7 +106,19 @@ void heapify_iterative(int arr[], int n, int i) {
 
 void heapSort_iterative(int arr[], int n) {
     // Build max-heap
-    for (int i = n / 2 - 1; i >= 0; i--)
+    for (int i = n / 2 - 1; i >= 0; i--){
         heapify_iterative(arr, n, i);
+    }
+}
 
-    // Extract elements
+// Extract elements
+
+int main(){
+    int arr[] = {5, 2, 8, 7, 3};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    heapSort(arr, n);
+    for(int i=0;i<n;i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}
