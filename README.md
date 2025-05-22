@@ -61,6 +61,11 @@ Contains linked‑list operations:
 
 - **linked_list_reversal.c**: Reversing a linked list (iterative and recursive).
 
+### 7. **Tree**
+Contains Tree operation
+
+- **ArrayToTree.c**: Convert an array into a Binary Tree
+- **BinaryTreeToArray.c**: Convert the Binary tree into array
 ---
 
 ## 🧠 Topics Covered
@@ -97,6 +102,9 @@ Contains linked‑list operations:
 ### 🔹 Graph Algorithms
 - Depth‑First Search (DFS)
 
+### 🔹Tree
+- Convert Array To Tree
+- Convert a Binary tree to level order array representation 
 ---
 
 ## 💻 Language
