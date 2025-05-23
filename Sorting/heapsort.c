@@ -120,5 +120,12 @@ int main(){
     for(int i=0;i<n;i++){
         printf("%d ", arr[i]);
     }
+    int array[] = {5, 2, 8, 7, 3};
+    printf("\n");
+    int m = sizeof(array)/sizeof(array[0]);
+    heapSort_iterative(array, m);
+    for(int i=0;i<m;i++){
+        printf("%d ", arr[i]);
+    }
     return 0;
 }
