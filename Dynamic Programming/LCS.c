@@ -22,6 +22,20 @@ int max(int a, int b){
     return (a > b) ? a : b;
 }
 
+// // Brute Force approach to find LCS length
+// // This function is commented out as it is not efficient for large inputs
+// int lcs_brute_force(char *x, char *y, int m, int n) {
+//     if (m == 0 || n == 0) {
+//         return 0;  // Base Case: one of the strings is empty
+//     }
+//     if (x[m - 1] == y[n - 1]) {
+//         // If characters match, include it and move both pointers
+//         return 1 + lcs_brute_force(x, y, m - 1, n - 1);
+//     } else {
+//         // If not matched, try two options: exclude from x or from y
+//         return max(lcs_brute_force(x, y, m - 1, n), lcs_brute_force(x, y, m, n - 1));
+//     }
+// }
 // 2D memoization table to store results of subproblems
 int t[100][100];
 
