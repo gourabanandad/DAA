@@ -55,6 +55,7 @@ Contains greedy‑strategy solutions:
 
 - **activity_selection.c**: Maximum number of non‑overlapping activities.
 - **fractional_knapsack.c**: Maximizing profit with fractional items in a knapsack.
+- **job_sequencing.c**: Sequence job with most profit.
 
 ### 6. **Linked List**
 Contains linked‑list operations:
@@ -95,6 +96,7 @@ Contains Tree operation
 ### 🔹 Greedy Algorithms
 - Activity Selection
 - Fractional Knapsack
+- Job Sequencing
 
 ### 🔹 Linked List Algorithms
 - Linked List Reversal
