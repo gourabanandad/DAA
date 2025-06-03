@@ -48,6 +48,26 @@ int mcm(int *arr, int i, int j) {
 
     return mn;
 }
+int mcm_dp(int *arr, int n){
+    int dp[n][n];
+    for(int i=0;i<n;i++){
+        dp[i][i] = 0;
+    }
+    for(int l=2;l<n;l++){
+        
+        for(int i = 1;i<n-l+1;i++){
+            int j = i+l-1;
+            dp[i][j] = INT_MAX;
+            for(int k = i;k<j;k++){
+                int cost = dp[i][k] + dp[k+1][j] + (arr[i-1] * arr[k] * arr[j]);
+                if(cost<dp[i][j]){
+                    dp[i][j] = cost;
+                }
+            }
+        }
+    }
+    return dp[1][n-1];
+}
 
 int main() {
     int arr[] = {10, 20, 40, 30, 50};
@@ -55,5 +75,6 @@ int main() {
 
     // Call MCM with i = 1 and j = n-1 (as the array stores dimensions, not matrices)
     printf("Minimum number of multiplications: %d\n", mcm(arr, 1, n - 1));
+    printf("Minimum number of multiplications: %d\n", mcm_dp(arr, n));
     return 0;
 }
