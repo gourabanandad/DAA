@@ -98,7 +98,7 @@ Contains Tree operation
 - Activity Selection
 - Fractional Knapsack
 - Job Sequencing
-
+- Prims Algorithm
 ### 🔹 Linked List Algorithms
 - Linked List Reversal
 
