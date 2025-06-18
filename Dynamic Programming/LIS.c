@@ -1,9 +1,10 @@
 #include <stdio.h>
 #define MAX 1000
-int list[MAX];
+int list[MAX]; // Global variable to store the longest decreasing subsequence
 int LIS(int arr[], int n){
-    int lis[n];
-    int prev[n];
+    int lis[n]; // Array to store the length of the longest decreasing subsequence ending at each index
+    int prev[n]; // Array to store the previous index in the longest decreasing subsequence
+    // Initialize the lis and prev arrays
     for(int i=0; i<n;i++){
         lis[i]=1;
         prev[i] = -1;
@@ -31,7 +32,8 @@ int LIS(int arr[], int n){
     return max;
 }
 int main() {
-    // Your code here
+    // This program finds the length of the longest decreasing subsequence in an array
+    // and also prints the elements of that subsequence.
     int n;
     printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
