@@ -44,6 +44,7 @@ Contains popular algorithms around arrays:
 - **prefix_sum.c**: Detailed overview of prefix sum technique.
 - **sliding_window.c**: Detailed overview of sliding window technique.
 - **two_pointers_two_sum.c**: Two‑pointers approach for the Two‑Sum problem in a sorted array.
+- **kadane.c**: Kadane’s Algorithm to find the maximum subarray sum in linear time.
 
 ### 4. **Graph**
 Contains implementations of popular graph algorithms:
@@ -57,6 +58,8 @@ Contains greedy‑strategy solutions:
 - **fractional_knapsack.c**: Maximizing profit with fractional items in a knapsack.
 - **job_sequencing.c**: Sequence job with most profit.
 - **prims_algo.c**: Prims algorithms to find minimum spannig tree.
+- **huffman_coding.c**: Greedy algorithm for generating optimal prefix codes based on character frequencies for data compression.
+
 
 ### 6. **Linked List**
 Contains linked‑list operations:
@@ -93,12 +96,15 @@ Contains Tree operation
 - Prefix Sum
 - Sliding Window
 - Two‑Pointers Two‑Sum
+- Kadane's Algorithm
 
 ### 🔹 Greedy Algorithms
 - Activity Selection
 - Fractional Knapsack
 - Job Sequencing
 - Prims Algorithm
+- Huffman Coding
+
 ### 🔹 Linked List Algorithms
 - Linked List Reversal
 
