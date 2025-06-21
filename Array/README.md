@@ -22,13 +22,14 @@ Here are some of the array problems already implemented in this directory:
 - **Two Pointers – Two Sum in Sorted Array**  
   Identifies whether a pair of numbers in a sorted array adds up to a given target using the two-pointers method.
 
+- **Kadane’s Algorithm – Maximum Subarray Sum**  
+  Finds the contiguous subarray with the largest sum using an efficient linear-time approach. Very useful for dynamic programming and array-based problems.
 ---
 
 ## 🚀 What’s Coming Next?
 
 This section will continue to grow! Future updates will include more array-based algorithms such as:
 
-- Kadane’s Algorithm (Maximum Subarray Sum)
 - Array Rearrangement and Partitioning Techniques
 - Dutch National Flag Problem
 - Sorting and Counting-based Problems
@@ -73,4 +74,3 @@ This project is open-source under the [MIT License](../LICENSE).
 ---
 
 ⭐ Star this repository if you find it helpful or inspiring!
-
